@@ -1,6 +1,6 @@
 const router = require('express').Router();
 //const apiRoutes = require('./apiRoutes');
-const {readFromFile, readAndAppend, writeToFile} = require('../helpers/fsUtils');
+const {readFromFile, readAndAppend, writeToFile} = require('../helpers/node-fsutils.js');
 const path = require('path');
 
 // GET Route for retrieving all the notes
