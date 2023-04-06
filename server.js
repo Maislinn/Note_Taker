@@ -2,8 +2,8 @@
 // Requiring packages 
 //const htmlRoutes = require('./routes/htmlRoutes');
 const express = require('express');
-const api = require('./routes/notes.js');
-const html = require('./routes/html.js');
+const api = require('./routes/apiRoutes.js');
+const html = require('./routes/htmlRoutes.js');
 //const path = require('path');
 
 //const apiRoutes = require('./routes/apiRoutes');
