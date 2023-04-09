@@ -1,8 +1,5 @@
-
- 
-
 const router = require('express').Router();
-const { readFromFile, readAndAppend } = require('../helpers/fsUtils');
+const { readFromFile, readAndAppend } = require('../helpers/node-fsutils.js');
 const path = require('path')
 
 // GET Route for retrieving all the notes
