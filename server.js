@@ -1,13 +1,8 @@
-//Adding Server.JS
-// Requiring packages 
-//const htmlRoutes = require('./routes/htmlRoutes');
+
 const express = require('express');
-// const api = require('./routes/apiRoutes.js');
-// const html = require('./routes/htmlRoutes.js');
-// //const path = require('path');
-//const apiRoutes = require('./routes/apiRoutes');
 const path = require('path');
-const api = require('./routes/index');
+const api = require('./routes/notes');
+const html = require('./routes/index');
 
 //Assign a port 
 const PORT = process.env.PORT || 3001;
@@ -19,7 +14,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
 app.use('/api', api);
-//app.use('/', html);
+app.use('/', html);
 
 // // GET Route for homepage
  app.get('/notes', (req, res) =>
